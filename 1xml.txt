@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgorund"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="202dp">
+
+        <TextView
+            android:id="@+id/dept"
+            android:layout_width="210dp"
+            android:layout_height="57dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="201dp"
+            android:layout_marginBottom="84dp"
+            android:text="Name"
+            android:textAllCaps="true"
+            android:gravity="center"
+
+            android:textAlignment="center"
+            android:textColor="#0B38DC"
+            android:textSize="24sp"
+            android:textStyle="italic|bold" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="29dp"
+            android:background="@drawable/img_3"
+             />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Name"
+        android:textAlignment="center"
+        android:textColor="#192EC3"
+        android:textSize="24sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:text="Job Title"
+        android:textAlignment="center"
+        android:textColor="#0B24DC"
+
+        android:textSize="24sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:text="Mobile number"
+        android:textAlignment="center"
+        android:textColor="#192EC5"
+        android:textSize="24sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Address"
+        android:textAlignment="center"
+        android:textColor="#283593"
+        android:textSize="24sp"
+        android:textStyle="italic|bold" />
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/black" />
+
+
+</LinearLayout>

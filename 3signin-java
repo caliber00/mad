@@ -1,0 +1,55 @@
+﻿package com.example.s3;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class SignIn extends AppCompatActivity {
+    EditText username,password;
+    Button signIn;
+    int count;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_sign_in);
+        username= findViewById(R.id.Username1);
+        password= findViewById(R.id.Password1);
+        signIn= (Button) findViewById(R.id.signin);
+        Bundle bundle =getIntent().getExtras();
+
+
+       String uname = bundle.getString("usernme");
+        String psd =bundle.getString("psd");
+
+        signIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String user=username.getText().toString();
+                String psdd=password.getText().toString();
+                if(user.equals(uname)&&psdd.equals(psd)){
+                    Toast.makeText(SignIn.this, "Success", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    count++;
+                    if (count >=3) {
+                        signIn.setEnabled(false);
+                    }
+                    else {
+                        Toast.makeText(SignIn.this, "failed", Toast.LENGTH_SHORT).show();
+
+                    }
+
+
+                }
+            }
+        });
+
+
+    }
+}
+
